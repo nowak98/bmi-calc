@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI's calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo-favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <container class="bmi__calculator">
+      <!-- HEADER -->
+      <h1 class="bmi__heading-primary">
+        Check your <span class="bmi__span">BMI</span>
+      </h1>
+      <!-- IMAGE -->
+      <img class="bmi__image" src="eating.svg" alt="Eating together" />
+      <!-- DATA FOR BMI -->
+      <div class="bmi__data">
+        <!-- WEIGHT -->
+        <label class="bmi__label" for="weight">Your weight (kg)</label>
+        <input
+          type="number"
+          class="bmi__input-text"
+          id="weight"
+          class="weight-input"
+          min="40"
+          max="250"
+        />
+        <!-- HEIGHT -->
+        <label class="bmi__label" for="height">Your height (cm)</label>
+        <input
+          type="number"
+          class="bmi__input-text"
+          id="height"
+          class="height"
+          min="120"
+          max="220"
+        />
+      </div>
+      <!-- SUBMIT -->
+      <button type="submit" class="bmi__btn">Find out your BMI</button>
+      <!-- RESULT -->
+      <div class="bmi__result">
+        <h2 class="bmi__result-header" id="bmi-value"></h2>
+        <p class="bmi__result-paragraph" id="bmi-description"></p>
+      </div>
+    </container>
+    <script src="script.js"></script>
+  </body>
+</html>
